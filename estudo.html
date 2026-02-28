@@ -25,11 +25,29 @@
   <p id="ni">Nível:</p>
   <input type="text" name="nome" id="nome"
   value="" maxlength="20">
+  <select class="Classe">
+    <option selected></option>
+    <option value="" class="Arcanista">Arcanista</option>
+    <option value="" class="Bárbaro">Bárbaro</option>
+    <option value="" class="Bardo">Bardo</option>
+    <option value="" class="Bucaneiro">Bucaneiro</option>
+    <option value="" class="Caçador">Caçador</option>
+    <option value="" class="Cavaleiro">Cavaleiro</option>
+    <option value="" class="Clérigo">Clérigo</option>
+    <option value="" class="Druida">Druida</option>
+    <option value="" class="Guerreiro">Guerreiro</option>
+    <option value="" class="Inventor">Inventor</option>
+    <option value="" class="Ladino">Ladino</option>
+    <option value="" class="Lutador">Lutador</option>
+    <option value="" class="Nobre">Nobre</option>
+    <option value="" class="Paladino">Paladino</option>
+  </select>
   <br>
-  <button onclick="colocar()"> colocar </button>
+
   <br>
+  <input onkeydown="false" type="number" min="1" max="20" value="1" name="Nível" id="nivel">
   <select id="raças" name="raças">
-     <option selected disabled style="color: black ;">Escolha com sabedoria</option>
+     <option selected style="color: black ;"></option>
      <option>Humano</option>
      <option>Anão</option>
      <option>Dahllan</option>
@@ -49,26 +67,45 @@
       <option>Trog</option>
    </select>
   <div>
-  <p id="atr_name_f">Força</p>
-  <p id="atr_name_d">Destreza</p>
-  <p id="atr_name_c">Constituição</p>
-  <p id="atr_name_i">Inteligencia</p>
-  <p id="atr_name_s">Sabedoria</p>
-  <p id="atr_name_cr">Carisma</p>
+  <select id="deuses">
+    <option></option>
+    <option value="Allihanna">Allihanna</option>
+    <option value="Azgher">Azgher</option>
+    <option value="Oceano">Oceano</option>
+    <option value="Kallyadranoch">Kallyadranoch</option>
+    <option value="Khalmyr">Khalmyr</option>
+    <option value="Lena">Lena</option>
+    <option value="Lin-Wu">Lin-Wu</option>
+    <option value="Marah">Marah</option>
+    <option value="Megalokk">Megalokk</option>
+    <option value="Nimb">Nimb</option>
+    <option value="Sszzaas">Sszzaas</option>
+    <option value="Tanna-Toh">Tanna-Toh</option>
+    <option value="Tenebra">Tenebra</option>
+    <option value="Thyatis">Thyatis</option>
+    <option value="Valkaria">Valkaria</option>
+    <option value="Wynna">Wynna</option>
+  </select>
+  <p id="atr_name_f">FOR</p>
+  <p id="atr_name_d">DES</p>
+  <p id="atr_name_c">CON</p>
+  <p id="atr_name_i">INT</p>
+  <p id="atr_name_s">SAB</p>
+  <p id="atr_name_cr">CAR</p>
   <br>
-  <input type="number" min="-40" max="40" class="atr" name="força" id="força" onkeydown="return false;" >
-  <input type="number" min="-40" max="40" class="atr" name="destreza" id="destreza" onkeydown="return false;">
-  <input type="number" min="-40" max="40" class="atr" name="constituição" id="constituição" onkeydown="return false;">
-  <input type="number" min="-40" max="40" class="atr" name="inteligencia" id="inteligencia" onkeydown="return false;">
-  <input type="number" min="-40" max="40" class="atr" name="sabedoria" id="sabedoria" onkeydown="return false;">
-  <input type="number" class="atr" name="carisma" id="carisma" onkeydown="return false;">
+  <input type="number" value="0" min="0" max="40" class="atr" name="força" id="força" onkeydown="return false;" >
+  <input type="number" value="0" min="0" max="40" class="atr" name="destreza" id="destreza" onkeydown="return false;">
+  <input type="number" value="0" min="0" max="40" class="atr" name="constituição" id="constituição" onkeydown="return false;">
+  <input type="number" value="0" min="0" max="40" class="atr" name="inteligencia" id="inteligencia" onkeydown="return false;">
+  <input type="number" value="0" min="0" max="40" class="atr" name="sabedoria" id="sabedoria" onkeydown="return false;">
+  <input type="number" value="0" min="0" max="40" class="atr" name="carisma" id="carisma" onkeydown="return false;">
   </div>
    <button onclick="travar()"> travar </button>
 
    <br>
    <p id="name"></p>
 <br>
-  <p>Habilidades de raça</p>
+  <p>Habilidades de raça:</p>
   <div id="hbr"></div>
 
   <script src="programar.js"></script>

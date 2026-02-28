@@ -31,8 +31,17 @@
 }
 
 #raças {
+    margin-top: -55px;
+    margin-left: 190px;
     position: absolute;
-    
+    width: 100px;
+    height: 16px;
+    text-align: left;
+    border: none;
+}
+#raças:focus {
+    outline: none;
+    border: none;
 }
 
 button:hover, #dkm:hover {
@@ -65,15 +74,17 @@ button:hover, #dkm:hover {
 .atr {
     cursor: default;
     margin-left: 4px;
-    margin-right: 17px;
-    height: 10vh;
-    width: 11vh;
-    font-size: large;
+    margin-right: 28px;
+    height: 16vh;
+    width: 14vh;
+    font-size: 26px;
     text-align: center;
     text-indent: 14px;
     border-radius: 15px;
     background-color:rgba(209, 139, 106, 0.836);
     border: none;
+    color: white;
+    font-weight: 650;
 }
 
 .atr:focus {
@@ -92,10 +103,77 @@ p {
 }
 
 #atr_name_f,#atr_name_d,#atr_name_c,#atr_name_i,#atr_name_s,#atr_name_cr {
-    display: inline-block;
+    position: absolute;
+    color: rgb(245, 245, 245);
+}
+#atr_name_cr{
+    margin-left: 676px;
+    margin-top: 21px;
+}
+#atr_name_s{
+    margin-left: 550px;
+    margin-top: 21px;
+}
+#atr_name_i{
+    margin-left: 422px;
+    margin-top: 21px;
+}
+#atr_name_c {
+    margin-left: 290px;
+    margin-top: 21px;
+}
+#atr_name_d {
+    margin-left: 163px;
+    margin-top: 21px;
+}
+#atr_name_f {
+    margin-left: 32px;
+    margin-top: 21px;
+}
+
+
+.Classe {
+    position: absolute;
+    margin-left: -247px;
+    margin-top: 17px;
+    height: 16px;
+    text-align: left;
+    border:none;
+}
+.Classe:focus {
+    outline: none;
 }
 
 body {
     min-width: max-content;
     overflow: auto;
+}
+
+#nivel, #nivel:focus {
+    position: absolute;
+    margin-left: 670px;
+    margin-top: -55px;
+    height: 15px;
+    width: 30px;
+    text-align: left;
+    border:none;
+    outline: none;
+}
+
+#nivel:hover {
+    cursor: default;
+}
+
+#deuses {
+    position: absolute;
+    margin-top: -55px;
+    margin-left: 370px;
+    width: 100px;
+    height: 16px;
+    text-align: left;
+    border: none;
+}
+#deuses:focus {
+    cursor: default;
+    outline: none;
 }
