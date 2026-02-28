@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="stile.css" media="screen">
+  <title>tormenta 20</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+</head>
+
+<body>
+  <p id="titulo"> TORMENTA 20</p>
+  <br>
+  <button onclick="tutorial()" class="Tutorial">Tutorial</button>
+  <img onclick="dark()" src="https://cdn3.iconfinder.com/data/icons/block/32/moon-512.png" id="dkm">
+  <p id="no">Nome:</p>
+  <p id="ra">Raça:</p>
+  <p id="di">Divindade:</p>
+  <p id="cl">Classe:</p>
+  <p id="ni">Nível:</p>
+  <input type="text" name="nome" id="nome"
+  value="" maxlength="20">
+  <br>
+  <button onclick="colocar()"> colocar </button>
+  <br>
+  <select id="raças" name="raças">
+     <option selected disabled style="color: black ;">Escolha com sabedoria</option>
+     <option>Humano</option>
+     <option>Anão</option>
+     <option>Dahllan</option>
+     <option>Elfo</option>
+     <option>Goblin</option>
+     <option>Lefou</option>
+     <option>Minotauro</option>
+     <option>Qareen</option>
+     <option>Golem</option>
+     <option>Hynne</option>
+      <option>Kliren</option>
+      <option>Medusa</option>
+      <option>Osteon</option>
+      <option>Sereia/tritão</option>
+      <option>Suraggel Anggelus</option>
+      <option>Suraggel Sulfure</option>
+      <option>Trog</option>
+   </select>
+  <div>
+  <p id="atr_name_f">Força</p>
+  <p id="atr_name_d">Destreza</p>
+  <p id="atr_name_c">Constituição</p>
+  <p id="atr_name_i">Inteligencia</p>
+  <p id="atr_name_s">Sabedoria</p>
+  <p id="atr_name_cr">Carisma</p>
+  <br>
+  <input type="number" min="-40" max="40" class="atr" name="força" id="força" onkeydown="return false;" >
+  <input type="number" min="-40" max="40" class="atr" name="destreza" id="destreza" onkeydown="return false;">
+  <input type="number" min="-40" max="40" class="atr" name="constituição" id="constituição" onkeydown="return false;">
+  <input type="number" min="-40" max="40" class="atr" name="inteligencia" id="inteligencia" onkeydown="return false;">
+  <input type="number" min="-40" max="40" class="atr" name="sabedoria" id="sabedoria" onkeydown="return false;">
+  <input type="number" class="atr" name="carisma" id="carisma" onkeydown="return false;">
+  </div>
+   <button onclick="travar()"> travar </button>
+
+   <br>
+   <p id="name"></p>
+<br>
+  <p>Habilidades de raça</p>
+  <div id="hbr"></div>
+
+  <script src="programar.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+
+#titulo {
+    margin-left: 232px;
+   color: rgb(221, 8, 8);
+    height: 2vh;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+
+.Tutorial {
+    position: absolute;
+    margin-left: 690px;
+    margin-top: -70px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(58, 61, 61);
+    font-weight: 770;
+    border-radius: 5px;
+    height: 30px;
+    width: 78px;
+}
+
+#dkm {
+    position:absolute;
+    height: 32px;
+    width: 32px;
+    margin-top: -77px;
+    margin-left: 29.5px;
+    border: solid;
+    border-radius: 19px;
+}
+
+#raças {
+    position: absolute;
+    
+}
+
+button:hover, #dkm:hover {
+    cursor: pointer;
+}
+
+#dark {
+    position: absolute;
+    margin-top: -65px;
+    margin-left: 40px;
+}
+
+#nome {
+    position: absolute;
+    border:none;
+    margin-left: -720px;
+    margin-top: 19px;
+    width: 90px;
+    height: 10px;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+#nome:focus{
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.atr {
+    cursor: default;
+    margin-left: 4px;
+    margin-right: 17px;
+    height: 10vh;
+    width: 11vh;
+    font-size: large;
+    text-align: center;
+    text-indent: 14px;
+    border-radius: 15px;
+    background-color:rgba(209, 139, 106, 0.836);
+    border: none;
+}
+
+.atr:focus {
+    outline:none;
+}
+
+p {
+    font-weight: 600;
+    color: rgba(216, 81, 81, 0.863);
+}
+
+#no,#ra,#di,#cl,#ni {
+    display: inline-block;
+    margin-right: 100px;
+    overflow-x: auto;
+}
+
+#atr_name_f,#atr_name_d,#atr_name_c,#atr_name_i,#atr_name_s,#atr_name_cr {
+    display: inline-block;
+}
+
+body {
+    min-width: max-content;
+    overflow: auto;
+}
