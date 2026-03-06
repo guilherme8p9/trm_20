@@ -1,208 +1,93 @@
-
-#titulo {
-    margin-left: 310px;
-   color: rgb(221, 8, 8);
-    height: 2vh;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 900;
+:root {
+        --vermelho: #9c1b1f;
+        --vermelho_escuro:  #5d0f14;
+        --color-submain: #a33139;
+        --branco-fudido: #ffffff;
+        --preto: #34090c;
+        --branco_viado: #e5f2ee;
+        --color-main: #9c1b1f;
+        --color-submain: #a33139;
+        --color-darkmain: #5d0f14; /*green */
+        --color-totalwhite: #ffffff; /* green 2*/
+        --color-darkestmain: #34090c; /*green3*/
+        --color-white: #e5f2ee;   
 }
-
-.Tutorial {
-    position: absolute;
-    margin-left: 777px;
-    margin-top: -70px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(58, 61, 61);
-    font-weight: 770;
-    border-radius: 5px;
-    height: 30px;
-    width: 78px;
-}
-
+/*-------------parte de cima do titulo e vermelho-------------------------*/
 #dkm {
-    position:absolute;
-    height: 32px;
-    width: 32px;
-    margin-top: -77px;
-    margin-left: 29.5px;
-    border: solid;
-    border-radius: 19px;
+        width: 2.7%;
+        height: 5vh;
 }
 
-#raças {
-    margin-top: -55px;
-    margin-left: 190px;
-    position: absolute;
-    width: 100px;
-    height: 16px;
-    text-align: left;
-    border: none;
-}
-#raças:focus {
-    outline: none;
-    border: none;
+#superior{
+        background-color: var(--color-darkmain);
+        box-shadow: 1px 1px 4px var(--color-darkestmain);
+        height: 10vh;
+        justify-content: space-between;
+        padding: 0 5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
 }
 
-button:hover, #dkm:hover {
-    cursor: pointer;
+#Tutorial {
+        color: var(--branco-fudido);
+        background: transparent;
+        border-radius: 17%;
+        border: transparent;
+        margin-left: auto;
+        width: 6%;
+        height: 5.4vh;
 }
 
-#dark {
-    position: absolute;
-    margin-top: -65px;
-    margin-left: 40px;
+#voltar {
+        width: 7%;
+        height: 5vh;
+        font-family: "fodona";
+        background-color: transparent;
+        border: none;
+        color: rgba(224, 220, 220, 0.76) ;
 }
 
-#nome {
-    position: absolute;
-    border:none;
-    margin-left: -882px;
-    margin-top: 19px;
-    width: 90px;
-    height: 10px;
-    background-color: white;
-    border-bottom: 1px solid black;
-    outline: none;
+#titulo{
+        font-size: 6vh;
+        margin-left: 28%;
+        color: rgba(214, 209, 209, 0.842);
+        font-family: "fodona";
+
 }
 
-#nome:focus{
-    border: none;
-    border-bottom: 1px solid black;
+@font-face {
+        font-family: comico;
+        src: url(lemon_milk/LEMONMILK-Regular.otf);
 }
 
-.atr {
-    cursor: default;
-    margin-left: 4px;
-    margin-right: 28px;
-    height: 16vh;
-    width: 14vh;
-    font-size: 26px;
-    text-align: center;
-    text-indent: 14px;
-    border-radius: 15px;
-    background-color:rgba(209, 139, 106, 0.836);
-    border: none;
-    color: white;
-    font-weight: 650;
+@font-face {
+        font-family: fodona;
+        src: url(lemon_milk/LEMONMILK-RegularItalic.otf);
+}
+/*----------------atributos principais-----------------------*/
+
+#informações_primariarias {
+        height: 16vh;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        display: inline-flex;
 }
 
-.atr:focus {
-    outline:none;
+#nome,#raças,#Origem,#deuses,#Classe,#nivel {
+        border: none;
+        border-bottom: 1px solid;
 }
-
-p {
-    font-weight: 600;
-    color: rgba(216, 81, 81, 0.863);
+#nome:focus,#raças:focus,#Origem:focus,#deuses:focus,#Classe:focus,#nivel:focus {
+        outline: none;
 }
-
-#no,#ori,#ra,#di,#cl,#ni {
-    display: inline-block;
-    margin-right: 100px;
-    overflow-x: auto;
+#nivel{
+        font-family: "comico";
+        width: 6vh;
 }
-
-#atr_name_f,#atr_name_d,#atr_name_c,#atr_name_i,#atr_name_s,#atr_name_cr {
-    position: absolute;
-    color: rgb(245, 245, 245);
+#no,#ra,#ori,#di,#cl,#ni {
+        font-family: "comico";
+        font-size: medium;
 }
-#atr_name_cr{
-    margin-left: 676px;
-    margin-top: 21px;
-}
-#atr_name_s{
-    margin-left: 550px;
-    margin-top: 21px;
-}
-#atr_name_i{
-    margin-left: 422px;
-    margin-top: 21px;
-}
-#atr_name_c {
-    margin-left: 290px;
-    margin-top: 21px;
-}
-#atr_name_d {
-    margin-left: 163px;
-    margin-top: 21px;
-}
-#atr_name_f {
-    margin-left: 34px;
-    margin-top: 21px;
-}
-
-
-.Classe {
-    position: absolute;
-    margin-left: -243px;
-    margin-top: 17px;
-    height: 16px;
-    text-align: left;
-    border:none;
-}
-.Classe:focus {
-    outline: none;
-}
-
-body {
-    min-width: max-content;
-    min-height: max-content;
-    overflow: auto;
-}
-
-#nivel, #nivel:focus {
-    position: absolute;
-    margin-left: 830px;
-    margin-top: -55px;
-    height: 15px;
-    width: 30px;
-    text-align: left;
-    border:none;
-    outline: none;
-}
-
-#nivel:hover {
-    cursor: default;
-}
-
-#deuses {
-    position: absolute;
-    margin-top: -55px;
-    margin-left: 531px;
-    width: 100px;
-    height: 16px;
-    text-align: left;
-    border: none;
-}
-#deuses:focus {
-    cursor: default;
-    outline: none;
-}
-
-#Origem {
-    position:absolute;
-    border: none;
-    margin-left: 352px;
-    margin-top: -34px;
-    width: 90px;
-    height: 10px;
-    background-color: white;
-    border-bottom: 1px solid black;
-    outline: none;
-}
-
-#caixa_pericias {
-    border: 2px solid;
-    position: absolute;
-    width: 380px;
-    height: 570px;
-    left: 905px;
-    top: 60px;
-    border-radius: 15px;
-}
-
-.pericias {
-    position: absolute;
-    left: 165px;
-    border-bottom: 1px solid;
-}
+/*-----------------------------atributos------------------------*/

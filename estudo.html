@@ -13,41 +13,20 @@
   <!-- Custom Styles -->
 </head>
 
-<body id="corpo">
+<body>
+<div id="superior">
+  <button id="voltar" onclick="window.location.href ='index.html';"><--voltar</button>
+  <img onclick="dark()" src="233664.png" id="dkm">
   <p id="titulo"> TORMENTA 20</p>
-  <br>
-  <button onclick="tutorial()" class="Tutorial">Tutorial</button>
-  <img onclick="dark()" src="https://cdn3.iconfinder.com/data/icons/block/32/moon-512.png" id="dkm">
-  <p id="no">Nome:</p>
-  <p id="ra">Raça:</p>
-  <p id="ori">Origem:</p>
-  <p id="di">Divindade:</p>
-  <p id="cl">Classe:</p>
-  <p id="ni">Nível:</p>
-  <input type="text" name="nome" id="nome"
-  value="" maxlength="20">
-  <select class="Classe">
-    <option selected></option>
-    <option value="" class="Arcanista">Arcanista</option>
-    <option value="" class="Bárbaro">Bárbaro</option>
-    <option value="" class="Bardo">Bardo</option>
-    <option value="" class="Bucaneiro">Bucaneiro</option>
-    <option value="" class="Caçador">Caçador</option>
-    <option value="" class="Cavaleiro">Cavaleiro</option>
-    <option value="" class="Clérigo">Clérigo</option>
-    <option value="" class="Druida">Druida</option>
-    <option value="" class="Guerreiro">Guerreiro</option>
-    <option value="" class="Inventor">Inventor</option>
-    <option value="" class="Ladino">Ladino</option>
-    <option value="" class="Lutador">Lutador</option>
-    <option value="" class="Nobre">Nobre</option>
-    <option value="" class="Paladino">Paladino</option>
-  </select>
-  <br>
-  <input id="Origem" type="text">
-  <br>
-  <input onkeydown="false" type="number" min="1" max="20" value="1" name="Nível" id="nivel">
-  <select id="raças" name="raças">
+  <button onclick="tutorial()" id="Tutorial">Tutorial</button>
+</div>
+
+<div id="informações_primariarias">
+   <p id="no">Nome:</p>
+   <input type="text" id="nome"
+   value="" maxlength="22">
+   <p id="ra">Raça:</p>
+   <select id="raças" name="raças">
      <option selected style="color: black ;"></option>
      <option>Humano</option>
      <option>Anão</option>
@@ -67,8 +46,10 @@
       <option>Suraggel Sulfure</option>
       <option>Trog</option>
    </select>
-  <div>
-  <select id="deuses">
+   <p id="ori">Origem:</p>
+   <input id="Origem" type="text">
+   <p id="di">Divindade:</p>
+   <select id="deuses">
     <option></option>
     <option value="Allihanna">Allihanna</option>
     <option value="Azgher">Azgher</option>
@@ -86,63 +67,94 @@
     <option value="Thyatis">Thyatis</option>
     <option value="Valkaria">Valkaria</option>
     <option value="Wynna">Wynna</option>
-  </select>
+   </select>
+   <p id="cl">Classe:</p>  
+   <select id="Classe">
+    <option selected></option>
+    <option value="" id="Arcanista">Arcanista</option>
+    <option value="" id="Bárbaro">Bárbaro</option>
+    <option value="" id="Bardo">Bardo</option>
+    <option value="" id="Bucaneiro">Bucaneiro</option>
+    <option value="" id="Caçador">Caçador</option>
+    <option value="" id="Cavaleiro">Cavaleiro</option>
+    <option value="" id="Clérigo">Clérigo</option>
+    <option value="" id="Druida">Druida</option>
+    <option value="" id="Guerreiro">Guerreiro</option>
+    <option value="" id="Inventor">Inventor</option>
+    <option value="" id="Ladino">Ladino</option>
+    <option value="" id="Lutador">Lutador</option>
+    <option value="" id="Nobre">Nobre</option>
+    <option value="" id="Paladino">Paladino</option>
+   </select>
+   <p id="ni">Nível:</p>
+   <input onkeydown=" return false" type="number" min="1" max="20" value="1" id="nivel">
+</div>
+
+<div id="atr_name_and_box">
   <p id="atr_name_f">FOR</p>
   <p id="atr_name_d">DES</p>
   <p id="atr_name_c">CON</p>
   <p id="atr_name_i">INT</p>
   <p id="atr_name_s">SAB</p>
   <p id="atr_name_cr">CAR</p>
-  <br>
-  <input type="number" value="0" min="0" max="40" class="atr" name="força" id="força" onkeydown="return false;" >
-  <input type="number" value="0" min="0" max="40" class="atr" name="destreza" id="destreza" onkeydown="return false;">
-  <input type="number" value="0" min="0" max="40" class="atr" name="constituição" id="constituição" onkeydown="return false;">
-  <input type="number" value="0" min="0" max="40" class="atr" name="inteligencia" id="inteligencia" onkeydown="return false;">
-  <input type="number" value="0" min="0" max="40" class="atr" name="sabedoria" id="sabedoria" onkeydown="return false;">
-  <input type="number" value="0" min="0" max="40" class="atr" name="carisma" id="carisma" onkeydown="return false;">
+  <div id="atr">
+  <input type="number" value="10" min="0" max="40" name="força" id="força" onkeydown="return false;" >
+  <input type="number" value="10" min="0" max="40" name="destreza" id="destreza" onkeydown="return false;">
+  <input type="number" value="10" min="0" max="40" name="constituição" id="constituição" onkeydown="return false;">
+  <input type="number" value="10" min="0" max="40" name="inteligencia" id="inteligencia" onkeydown="return false;">
+  <input type="number" value="10" min="0" max="40" name="sabedoria" id="sabedoria" onkeydown="return false;">
+  <input type="number" value="10" min="0" max="40" name="carisma" id="carisma" onkeydown="return false;">
   </div>
-   <button onclick="travar()"> travar </button>
-
-   <br>
-   <p id="name"></p>
-<br>
-  <p>Habilidades de raça:</p>
-  <div id="hbr"></div>
-<div id="caixa_pericias">
-  <p class="pericias">Perícias</p>
-  <br>
-  <br>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
+</div>
+<div id="modificador">
+  <input type="text" onkeydown="return false" name="md1" value="0" id="atr_modi_f">
+  <input type="text" onkeydown="return false" name="md2" value="0" id="atr_name_d">
+  <input type="text" onkeydown="return false" name="md3" value="0" id="atr_name_c">
+  <input type="text" onkeydown="return false" name="md4" value="0" id="atr_name_i">
+  <input type="text" onkeydown="return false" name="md5" value="0" id="atr_name_s">
+  <input type="text" onkeydown="return false" name="md6" value="0" id="atr_name_cr">
 </div>
 
+<br>
+
+<div id="habilidade_de_raça">
+  <p>Habilidades de raça:</p>
+</div>
+
+<div id="caixa_pericias">
+  <p class="pericias">Perícias:</p>
+  <div>
+    <input type="checkbox"><p>Acrobacia</p>
+    <input type="checkbox"><p>Adestramento</p>
+    <input type="checkbox"><p>Atletismo</p>
+    <input type="checkbox"><p>Atuação</p>
+    <input type="checkbox"><p>Cavalgar</p>
+    <input type="checkbox"><p>Conhecimente</p>
+    <input type="checkbox"><p>Cura</p>
+    <input type="checkbox"><p>Diplomacia</p>
+    <input type="checkbox"><p>Enganação</p>
+    <input type="checkbox"><p>Fortitude</p>
+    <input type="checkbox"><p>Furtividade</p>
+    <input type="checkbox"><p>Guerra</p>
+    <input type="checkbox"><p>Iniciativa</p>
+    <input type="checkbox"><p>Intimidação</p>
+    <input type="checkbox"><p>Intuição</p>
+    <input type="checkbox"><p>Investigação</p>
+    <input type="checkbox"><p>Jogatina</p>
+    <input type="checkbox"><p>Ladinagem</p>
+    <input type="checkbox"><p>Luta</p>
+    <input type="checkbox"><p>Misticismo</p>
+    <input type="checkbox"><p>Nobresa</p>
+    <input type="checkbox"><p>Ofício</p>
+    <input type="checkbox"><p>Percepção</p>
+    <input type="checkbox"><p>Pilotagem</p>
+    <input type="checkbox"><p>Pontaria</p>
+    <input type="checkbox"><p>Reflexos</p>
+    <input type="checkbox"><p>Religião</p>
+    <input type="checkbox"><p>Sobrevivência</p>
+    <input type="checkbox"><p>Vontade</p>
+  </div>
+</div>
   <script src="programar.js"></script>
 </body>
 </html>
