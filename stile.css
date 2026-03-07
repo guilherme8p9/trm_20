@@ -12,10 +12,34 @@
         --color-darkestmain: #34090c; /*green3*/
         --color-white: #e5f2ee;   
 }
+
+/*--aqui em baixo eu tiro as flechas do input number---*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+        margin: none;
+}
+
 /*-------------parte de cima do titulo e vermelho-------------------------*/
-#dkm {
-        width: 2.7%;
-        height: 5vh;
+*{
+        margin: 0;
+        padding: 0;
+}
+
+#logo {
+        width: 3.25%;
+        height: 6.5vh;
+        transition: 0.2s;
+}
+
+#logo:hover{
+        width: 3%;
+        height: 6vh;
+    }
+
+body{
+        font-family: "readex";
 }
 
 #superior{
@@ -28,32 +52,41 @@
         flex-direction: row;
         align-items: center;
 }
+#melhor{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: var(--branco-fudido);
+        display: inline;
+        font-family: "readex";
+}
+
+#melhor a:hover{
+        text-shadow: 0 0 15px var(--color-totalwhite);
+}
+
+#melhor a{
+        text-decoration: none;
+        color: var(--color-white);
+        transition: 1s;
+}
 
 #Tutorial {
+        margin-right: 3vh;
+        margin-left: 3vh;
         color: var(--branco-fudido);
-        background: transparent;
-        border-radius: 17%;
-        border: transparent;
-        margin-left: auto;
-        width: 6%;
-        height: 5.4vh;
+        font-family: "readex";
 }
 
-#voltar {
-        width: 7%;
-        height: 5vh;
-        font-family: "fodona";
-        background-color: transparent;
-        border: none;
-        color: rgba(224, 220, 220, 0.76) ;
+#volta{
+        font-family: "readex";
+        color: var(--branco-fudido);
+        
 }
 
-#titulo{
-        font-size: 6vh;
-        margin-left: 28%;
-        color: rgba(214, 209, 209, 0.842);
-        font-family: "fodona";
-
+@font-face {
+        font-family: readex;
+        src: url(lemon_milk/ReadexPro-Regular.ttf);
 }
 
 @font-face {
@@ -66,6 +99,9 @@
         src: url(lemon_milk/LEMONMILK-RegularItalic.otf);
 }
 /*----------------atributos principais-----------------------*/
+#corpo{
+        border:solid;
+}
 
 #informações_primariarias {
         height: 16vh;
@@ -73,21 +109,35 @@
         flex-direction: row;
         align-items: center;
         display: inline-flex;
+        justify-content: center;
 }
 
 #nome,#raças,#Origem,#deuses,#Classe,#nivel {
         border: none;
-        border-bottom: 1px solid;
+        text-align: left;
+        background-color: transparent;
 }
 #nome:focus,#raças:focus,#Origem:focus,#deuses:focus,#Classe:focus,#nivel:focus {
         outline: none;
+        border-bottom: 1px solid;
 }
 #nivel{
         font-family: "comico";
         width: 6vh;
+        text-align: center;
 }
 #no,#ra,#ori,#di,#cl,#ni {
         font-family: "comico";
         font-size: medium;
 }
+
+#nome{
+        width: 22vh;
+}
+
+#Origem {
+        width: 22vh;
+}
 /*-----------------------------atributos------------------------*/
+
+

@@ -13,18 +13,22 @@
   <!-- Custom Styles -->
 </head>
 
-<body>
-<div id="superior">
-  <button id="voltar" onclick="window.location.href ='index.html';"><--voltar</button>
-  <img onclick="dark()" src="233664.png" id="dkm">
-  <p id="titulo"> TORMENTA 20</p>
-  <button onclick="tutorial()" id="Tutorial">Tutorial</button>
-</div>
+<body id="bodyy">
 
-<div id="informações_primariarias">
+ <div id="superior">
+  <img src="dado20.png" id="logo">
+  <div id="melhor">
+  <a id="voltar" href="#">Home</a>
+  <a href="https://www.youtube.com/watch?v=EJZGBv_NzU8" id="Tutorial">Tutorial</a>
+  <a href="#" onclick="dark()" >Darkmode</a>
+  </div>
+ </div>
+
+<div id="corpo">
+  <div id="informações_primariarias">
    <p id="no">Nome:</p>
    <input type="text" id="nome"
-   value="" maxlength="22">
+   value="" maxlength="20">
    <p id="ra">Raça:</p>
    <select id="raças" name="raças">
      <option selected style="color: black ;"></option>
@@ -87,41 +91,44 @@
     <option value="" id="Paladino">Paladino</option>
    </select>
    <p id="ni">Nível:</p>
-   <input onkeydown=" return false" type="number" min="1" max="20" value="1" id="nivel">
-</div>
-
-<div id="atr_name_and_box">
-  <p id="atr_name_f">FOR</p>
-  <p id="atr_name_d">DES</p>
-  <p id="atr_name_c">CON</p>
-  <p id="atr_name_i">INT</p>
-  <p id="atr_name_s">SAB</p>
-  <p id="atr_name_cr">CAR</p>
-  <div id="atr">
-  <input type="number" value="10" min="0" max="40" name="força" id="força" onkeydown="return false;" >
-  <input type="number" value="10" min="0" max="40" name="destreza" id="destreza" onkeydown="return false;">
-  <input type="number" value="10" min="0" max="40" name="constituição" id="constituição" onkeydown="return false;">
-  <input type="number" value="10" min="0" max="40" name="inteligencia" id="inteligencia" onkeydown="return false;">
-  <input type="number" value="10" min="0" max="40" name="sabedoria" id="sabedoria" onkeydown="return false;">
-  <input type="number" value="10" min="0" max="40" name="carisma" id="carisma" onkeydown="return false;">
+   <input oninput="if(this.value.length > 2) this.value = this.value.slice(1,2);" type="number" min="1" max="20" value="1" id="nivel">
   </div>
-</div>
-<div id="modificador">
-  <input type="text" onkeydown="return false" name="md1" value="0" id="atr_modi_f">
-  <input type="text" onkeydown="return false" name="md2" value="0" id="atr_name_d">
-  <input type="text" onkeydown="return false" name="md3" value="0" id="atr_name_c">
-  <input type="text" onkeydown="return false" name="md4" value="0" id="atr_name_i">
-  <input type="text" onkeydown="return false" name="md5" value="0" id="atr_name_s">
-  <input type="text" onkeydown="return false" name="md6" value="0" id="atr_name_cr">
-</div>
 
 <br>
 
-<div id="habilidade_de_raça">
-  <p>Habilidades de raça:</p>
-</div>
+  <div id="atr_name_and_box">
+   <p id="atr_name_f">FOR</p>
+   <p id="atr_name_d">DES</p>
+   <p id="atr_name_c">CON</p>
+   <p id="atr_name_i">INT</p>
+   <p id="atr_name_s">SAB</p>
+   <p id="atr_name_cr">CAR</p>
+   <div id="atr">
+     <input type="number" value="10" min="0" max="40" name="força" id="força" onkeydown="return false;" >
+     <input type="number" value="10" min="0" max="40" name="destreza" id="destreza" onkeydown="return false;">
+     <input type="number" value="10" min="0" max="40" name="constituição" id="constituição" onkeydown="return false;">
+     <input type="number" value="10" min="0" max="40" name="inteligencia" id="inteligencia" onkeydown="return false;">
+     <input type="number" value="10" min="0" max="40" name="sabedoria" id="sabedoria" onkeydown="return false;">
+     <input type="number" value="10" min="0" max="40" name="carisma" id="carisma" onkeydown="return false;">
+   </div>
+  </div>
 
-<div id="caixa_pericias">
+  <div id="modificador">
+   <input type="text" onkeydown="return false" name="md1" value="0" id="atr_modi_f">
+   <input type="text" onkeydown="return false" name="md2" value="0" id="atr_name_d">
+   <input type="text" onkeydown="return false" name="md3" value="0" id="atr_name_c">
+   <input type="text" onkeydown="return false" name="md4" value="0" id="atr_name_i">
+   <input type="text" onkeydown="return false" name="md5" value="0" id="atr_name_s">
+   <input type="text" onkeydown="return false" name="md6" value="0" id="atr_name_cr">
+  </div>
+
+<br>
+
+  <div id="habilidade_de_raça">
+  <p>Habilidades de raça:</p>
+  </div>
+
+  <div id="caixa_pericias">
   <p class="pericias">Perícias:</p>
   <div>
     <input type="checkbox"><p>Acrobacia</p>
@@ -154,7 +161,10 @@
     <input type="checkbox"><p>Sobrevivência</p>
     <input type="checkbox"><p>Vontade</p>
   </div>
+  </div>
+
 </div>
-  <script src="programar.js"></script>
+
+<script src="programar.js"></script>
 </body>
 </html>
