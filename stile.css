@@ -30,7 +30,7 @@ input::-webkit-inner-spin-button{
 #logo {
         width: 3.25%;
         height: 6.5vh;
-        transition: 0.2s;
+        transition: 0.5s;
 }
 
 #logo:hover{
@@ -100,7 +100,9 @@ body{
 }
 /*----------------atributos principais-----------------------*/
 #corpo{
-        border:solid;
+        border-left: solid;
+        border-bottom: solid;
+        border-right: solid;
 }
 
 #informações_primariarias {
@@ -138,6 +140,86 @@ body{
 #Origem {
         width: 22vh;
 }
+
 /*-----------------------------atributos------------------------*/
 
 
+#atr_nomes{
+        margin-left: 10vh;
+        gap: 17.3vh;
+        display: flex;
+        position: absolute;
+}
+
+#atr{
+        margin-left: 6vh;
+        gap: 7.8vh;
+        display: flex;
+}
+
+#força, #destreza, #constituição, #inteligencia, #sabedoria, #carisma{
+    height: 16vh;
+    width: 14vh;
+    font-size: 26px;
+    text-align: center;
+    border-radius: 15px;
+    font-weight: 650;
+    background-color: transparent;
+}
+
+.atr_principais:focus {
+    outline:none;
+}
+
+#atr_name_and_box {
+        margin-top: 4%;
+}
+
+#modificador{
+        display: flex;
+        margin-left: 9.9vh;
+        cursor: default;
+        position: absolute;
+        gap: 15.85vh;
+        margin-top: -2.6%;
+}
+
+#atr_modi_f,#atr_modi_d,#atr_modi_c,#atr_modi_i,#atr_modi_s,#atr_modi_cr{
+        border-radius: 2vh;
+        width: 6vh;
+        height: 5vh;
+        text-align: center;
+        font-weight: 650;
+        cursor: default;
+        outline: none;
+        background-color: transparent;
+}
+
+#atr_name_f{
+        margin-left: 0.8vh;
+}
+
+/*-------------------parte das pericias----------------*/
+
+#caixa_pericias {
+        overflow: hidden;
+        border: 0.32vh solid;
+        width: 30%;
+        border-radius: 0.7vh;
+        margin-left: 67%;
+        margin-top: -11%;
+        border-bottom: 1px;
+}
+
+#pericias {
+        margin-left: 3%;
+
+}
+
+.mesma_linha{
+        display: flex;
+}
+
+@media screen and (max-width: 600px) {
+
+}

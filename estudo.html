@@ -14,13 +14,13 @@
 </head>
 
 <body id="bodyy">
-
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0">
  <div id="superior">
-  <img src="dado20.png" id="logo">
+    <img src="dado20.png" id="logo">
   <div id="melhor">
-  <a id="voltar" href="#">Home</a>
-  <a href="https://www.youtube.com/watch?v=EJZGBv_NzU8" id="Tutorial">Tutorial</a>
-  <a href="#" onclick="dark()" >Darkmode</a>
+   <a id="voltar" href="#">Home</a>
+   <a href="https://www.youtube.com/watch?v=EJZGBv_NzU8" id="Tutorial">Tutorial</a>
+   <a href="#" onclick="dark()" >Darkmode</a>
   </div>
  </div>
 
@@ -49,6 +49,7 @@
       <option>Suraggel Anggelus</option>
       <option>Suraggel Sulfure</option>
       <option>Trog</option>
+      <option>Outra</option>
    </select>
    <p id="ori">Origem:</p>
    <input id="Origem" type="text">
@@ -97,29 +98,31 @@
 <br>
 
   <div id="atr_name_and_box">
-   <p id="atr_name_f">FOR</p>
-   <p id="atr_name_d">DES</p>
-   <p id="atr_name_c">CON</p>
-   <p id="atr_name_i">INT</p>
-   <p id="atr_name_s">SAB</p>
-   <p id="atr_name_cr">CAR</p>
+    <div id="atr_nomes">
+      <p id="atr_name_f">FOR</p>
+      <p id="atr_name_d">DES</p>
+      <p id="atr_name_c">CON</p>
+      <p id="atr_name_i">INT</p>
+      <p id="atr_name_s">SAB</p>
+      <p id="atr_name_cr">CAR</p>
+    </div>
    <div id="atr">
-     <input type="number" value="10" min="0" max="40" name="força" id="força" onkeydown="return false;" >
-     <input type="number" value="10" min="0" max="40" name="destreza" id="destreza" onkeydown="return false;">
-     <input type="number" value="10" min="0" max="40" name="constituição" id="constituição" onkeydown="return false;">
-     <input type="number" value="10" min="0" max="40" name="inteligencia" id="inteligencia" onkeydown="return false;">
-     <input type="number" value="10" min="0" max="40" name="sabedoria" id="sabedoria" onkeydown="return false;">
-     <input type="number" value="10" min="0" max="40" name="carisma" id="carisma" onkeydown="return false;">
+     <input type="text" maxlength="2" data-id="f" class="sync-input" value="10" min="0" max="40" name="força" id="força">
+     <input type="text" maxlength="2" data-id="d" class="sync-input" value="10" min="0" max="40" name="destreza" id="destreza">
+     <input type="text" maxlength="2" data-id="c" class="sync-input" value="10" min="0" max="40" name="constituição" id="constituição">
+     <input type="text" maxlength="2" data-id="i" class="sync-input" value="10" min="0" max="40" name="inteligencia" id="inteligencia">
+     <input type="text" maxlength="2" data-id="s" class="sync-input" value="10" min="0" max="40" name="sabedoria" id="sabedoria">
+     <input type="text" maxlength="2" data-id="cr"class="sync-input" value="10" min="0" max="40" name="carisma" id="carisma">
    </div>
   </div>
 
   <div id="modificador">
    <input type="text" onkeydown="return false" name="md1" value="0" id="atr_modi_f">
-   <input type="text" onkeydown="return false" name="md2" value="0" id="atr_name_d">
-   <input type="text" onkeydown="return false" name="md3" value="0" id="atr_name_c">
-   <input type="text" onkeydown="return false" name="md4" value="0" id="atr_name_i">
-   <input type="text" onkeydown="return false" name="md5" value="0" id="atr_name_s">
-   <input type="text" onkeydown="return false" name="md6" value="0" id="atr_name_cr">
+   <input type="text" onkeydown="return false" name="md2" value="0" id="atr_modi_d">
+   <input type="text" onkeydown="return false" name="md3" value="0" id="atr_modi_c">
+   <input type="text" onkeydown="return false" name="md4" value="0" id="atr_modi_i">
+   <input type="text" onkeydown="return false" name="md5" value="0" id="atr_modi_s">
+   <input type="text" onkeydown="return false" name="md6" value="0" id="atr_modi_cr">
   </div>
 
 <br>
@@ -129,38 +132,40 @@
   </div>
 
   <div id="caixa_pericias">
-  <p class="pericias">Perícias:</p>
-  <div>
-    <input type="checkbox"><p>Acrobacia</p>
-    <input type="checkbox"><p>Adestramento</p>
-    <input type="checkbox"><p>Atletismo</p>
-    <input type="checkbox"><p>Atuação</p>
-    <input type="checkbox"><p>Cavalgar</p>
-    <input type="checkbox"><p>Conhecimente</p>
-    <input type="checkbox"><p>Cura</p>
-    <input type="checkbox"><p>Diplomacia</p>
-    <input type="checkbox"><p>Enganação</p>
-    <input type="checkbox"><p>Fortitude</p>
-    <input type="checkbox"><p>Furtividade</p>
-    <input type="checkbox"><p>Guerra</p>
-    <input type="checkbox"><p>Iniciativa</p>
-    <input type="checkbox"><p>Intimidação</p>
-    <input type="checkbox"><p>Intuição</p>
-    <input type="checkbox"><p>Investigação</p>
-    <input type="checkbox"><p>Jogatina</p>
-    <input type="checkbox"><p>Ladinagem</p>
-    <input type="checkbox"><p>Luta</p>
-    <input type="checkbox"><p>Misticismo</p>
-    <input type="checkbox"><p>Nobresa</p>
-    <input type="checkbox"><p>Ofício</p>
-    <input type="checkbox"><p>Percepção</p>
-    <input type="checkbox"><p>Pilotagem</p>
-    <input type="checkbox"><p>Pontaria</p>
-    <input type="checkbox"><p>Reflexos</p>
-    <input type="checkbox"><p>Religião</p>
-    <input type="checkbox"><p>Sobrevivência</p>
-    <input type="checkbox"><p>Vontade</p>
-  </div>
+     <div id="box">
+     <p class="pericias">Perícias:</p>
+     </div>
+     <div id="pericias">
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Acrobacia</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Adestramento</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Atletismo</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Atuação</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Cavalgar</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Conhecimente</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Cura</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Diplomacia</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Enganação</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Fortitude</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Furtividade</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Guerra</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Iniciativa</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Intimidação</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Intuição</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Investigação</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Jogatina</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Ladinagem</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Luta</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Misticismo</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Nobresa</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Ofício</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Percepção</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Pilotagem</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Pontaria</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Reflexos</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Religião</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Sobrevivência</p><input type="text"></div>
+      <div class="mesma_linha"><input type="text"><input type="checkbox"><p>Vontade</p><input type="text"></div>
+   </div>
   </div>
 
 </div>
