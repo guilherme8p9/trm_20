@@ -1,0 +1,147 @@
+:root{
+    --black: #000;
+    --titulosborda:#062936;
+    --bordanomes:#3f0f12;
+    --rodape:#6f3c27;
+    --vermelho:#b02b2e;
+    --aspas:#f0dc82;
+    --bg:#e8d1b5;
+    --grayblur:#727175;
+    --linhaA:#ddd9d5;
+    --linhaBbg:#f6f6f6;
+    --white:#ffffff;
+    --azul: #0051ff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: var(--vermelho);
+    color: var(--black);
+}
+
+#form{
+    gap: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#content{
+    gap: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--black);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: var(--bg);
+    width: 35%;
+    height: 80vh;
+}
+
+#sign{
+    padding: 1rem 5rem;
+    border: 1px solid var(--black);
+    border-radius: 1rem;
+}
+
+#sign:hover{
+    background-color: var(--vermelho);
+    color: var(--white);
+    cursor: pointer;
+}
+
+#sign:active{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+#sign:disabled{
+    background-color: var(--grayblur);
+    color: var(--white);
+    cursor: not-allowed;
+}
+
+#form input{
+    padding: 0.5rem;
+    border: 1px solid var(--black);
+    border-radius: 0.5rem;
+    width: 85%;
+}
+
+#message{
+    color: var(--vermelho);
+    font-size: 0.9rem;
+}
+
+label{
+    top: 10.5rem;
+    justify-content: space-between;
+    left: 32rem;
+    background-color: transparent;
+    padding: 0 0.5rem;
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.4s ease;
+}
+
+input:focus + label{
+    transform: translateY(-1rem) translateX(1rem);
+    color: var(--azul);
+    background-color: var(--bg);
+}
+
+input:focus{
+    outline: none;
+    border-color: var(--azul);
+}
+
+#content h1{
+    font-size: 2rem;
+    color: var(--titulosborda);
+}
+
+#content label{
+    cursor: text;
+    font-size: 0.8rem;
+    color: var(--bordanomes);
+}
+
+#name-label{
+    position: absolute;
+    top: 9.5rem;
+    left: 31rem;;
+}
+
+#email-label{
+    position: absolute;
+    top: 12.5rem;
+    left: 31rem;;
+}
+
+#password-label{
+    position: absolute;
+    top: 15.5rem;
+    left: 31rem;;
+}
+
+#confirm_pass-label{
+    position: absolute;
+    top: 18.6rem;
+    left: 31rem;;
+}
+
+#login-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}

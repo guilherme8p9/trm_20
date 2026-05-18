@@ -1,0 +1,225 @@
+    /* aqui estou criando variaveis de cor para usar depois */
+     :root {
+        --color-main: #9c1b1f;
+        --color-submain: #a33139;
+        --color-darkmain: #5d0f14; /*green */
+        --color-totalwhite: #ffffff; /* green 2*/
+        --color-darkestmain: #34090c; /*green3*/
+        --color-white: #e5f2ee;  
+    }
+
+    /* qnd vc usa o asterisco ele aplica pra todos os elementos da pagina */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* aqui eu crio a fonte personalizada q eu quero usar, uso format truetype pq eh fonte .ttf e opentype pra .otf */
+    @font-face {
+        font-family: readex pro;
+        src: url('../../assets/Lovelo\ Black.otf') format(truetype);
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: lovelo;
+        src: url('../../assets/ReadexPro-Regular.ttf') format(opentype);
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: ahsing;
+        src: url('../../assets/ahsing-regular.otf') format(opentype);
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: inter;
+        src: url('../../assets/Inter-VariableFont_opsz\,wght.ttf') format(truetype);
+        font-weight: normal;
+        font-style: normal;
+    
+    }
+     body {
+       
+        font-family: 'readex pro';
+        background-color: var(--color-totalwhite);
+        height: 100%;
+        
+    }
+
+
+    /* aqui eu mexo na imagem da logo e deixo ela menor */
+    .img_logo_header{
+        width: 45.5px;
+        transition: 0.5s ;
+    }
+    .img_logo_header:hover{
+        width: 40px;
+    }
+
+    /* aqui eu alinho os elementos */
+    .header, .navigation_header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* aqui eu altero o fundo da header */
+    .header{
+        background-color: var(--color-darkmain);
+        box-shadow: 1px 1px 4px var(--color-darkestmain);
+        height: 60px;
+        justify-content: space-between;
+        padding: 0 5%;
+    }
+
+    /* coloca o espaco entre os elemtnos na header */
+    .navigation_header{
+    gap: 85px;
+    }
+
+    /* altera as cores e animacoes dos links*/
+    .navigation_header a{
+        text-decoration: none;
+        color: var(--color-white);
+        transition: 1s;
+    }
+    /*ainda alterando as animacoes, aqui eh o brilho qnd passa o mouse*/
+    .spark:hover{
+     text-shadow: 0 0 15px var(--color-totalwhite);
+    }
+    
+    /*animacao das coisas*/
+
+     @keyframes deslizapaga {
+        from {opacity: 0; transform: translateY(20px);}
+        to {opacity: 100; transform: translateY(0);}
+    }
+
+    @keyframes desvanecer {
+        0%{opacity: 0; transform: translate(-50%, -50%); scale: 0.3; rotate: 0deg;}
+        10%{opacity: 1;}
+        100%{opacity: 0; transform: translate(-50%, -50%); scale: 4; rotate: 90deg;}
+    }
+
+    .main_titles{animation: deslizapaga 2s forwards ease;}
+    .main_content{animation: deslizapaga 2s forwards ease;}
+    .imagem_overlay{animation: deslizapaga 2s forwards ease;}
+    .navigation_header a{animation: deslizapaga 2s forwards ease;}
+    .img_logo_header{animation: deslizapaga 2s forwards ease;}
+
+    /*trilha do mouse, usa javascript*/
+    .mouse_trail{
+        width: 10px;
+        height: 10px;
+        background-color: rgba(255, 255, 255, 1);
+        filter: blur(4px);
+        box-shadow: 0 0 20px 5px rgba(255, 255, 255, 1);
+        border-radius: 50%;
+        position: fixed;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        animation: desvanecer 0.8 forwards ease-out;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        mix-blend-mode: screen;
+        
+    }
+
+    /* isso tudo aqui eh pra fazer as faixas vermelhas desgracadas*/
+    .layout{ display: grid;
+        grid-template-columns: 0.3fr 1.5fr 3fr 1fr 0.3fr;
+        min-height: calc(100vh - 60px);
+        grid-template-rows: auto;}
+
+    .colorido0 {grid-column: 1; background-color: var(--color-main);}
+    .branco{grid-column: 2; background-color: var(--color-totalwhite);}
+    .colorido{ grid-column: 3; background-color: var(--color-main); grid-row: 1;}
+    .branco2{grid-column: 4; background-color: var(--color-totalwhite);}
+    .colorido2{grid-column: 5; background-color: var(--color-main); grid-row: 1;}
+
+    .colorido0, .branco, .colorido, .branco2, .colorido2 {grid-row: 1; height: 100%;}
+
+    /*isso aqui eh a imagem do cavaleiro*/
+     .imagem_overlay{
+        grid-column: 2 / 4;
+        grid-row: 1;
+        z-index: 10;
+        width: 55%;
+        pointer-events: none;
+        margin-left: 0;
+        margin-top: 15px;
+        align-self: left ;
+        justify-self: left;
+        transition: 1s;
+        filter: drop-shadow(0 0 53px var(--color-main));
+     }
+
+     /*AQUI eh pros textos dentro da faixa vermelha*/
+
+     .titulo1 {
+        font-family: 'lovelo';
+        font-weight: normal;
+        color: var(--color-white);
+        font-size: clamp(40px, 8vw, 130px);
+        margin-top: 13%;
+        margin-right: 20%;
+        margin-bottom: 0;
+        transition: 1s;
+     }
+     .titulo2 {
+        font-family: 'ahsing';
+        font-weight: normal;
+        color: var(--color-white);
+        font-size: clamp(25px, 5vw, 100px);
+        margin-top: -5vh;
+        margin-left: 15vh;
+        transition: 1s;
+     }
+
+     .titulo2:hover{filter: drop-shadow(0 0 15px var(--color-totalwhite));}
+     .titulo1:hover{filter: drop-shadow(0 0 15px var(--color-totalwhite));}
+
+     .main_text{
+        font-family: 'inter';
+        font-weight: normal;
+        color: var(--color-white);
+        margin: clamp(45px, 8.5vw, 140px);
+        margin-top: 5%;
+        margin-right: 15%;
+     }
+
+     .main_button{
+        background-color: var(--color-white);
+        color: var(--color-main);
+        font-family: 'readex pro';
+        padding: 18px 70px;
+        border: none;
+        border-radius: 50px;
+        font-size: clamp(10px, 1vw, 18px);
+        text-align: center;
+        cursor: pointer;
+        transition: 1s;
+        margin-top: -10%;  
+     }
+
+     .main_button:hover{
+        box-shadow: 0 0 50px var(--color-white);
+     }
+
+     .main_content{
+       grid-column: 3;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+        gap: 20px;
+
+     }
+     .main_titles{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }

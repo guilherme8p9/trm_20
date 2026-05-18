@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../componentes/ui/page.css">
+</head>
+<body>
+    <form id="form">
+        <div id="content">
+            <h1>New account</h1>
+            <input type="text" id="name" name="name" required>
+            <label for="name" id="name-label">Name</label>
+
+            <input type="email" id="email" name="email" required>
+            <label for="email" id="email-label">Email</label>
+            
+            <input type="password" id="password" name="password" required>
+            <label for="password" id="password-label">Password</label>
+            
+            <input type="password" id="confirm_pass" name="confirm_pass" required>
+            <label for="confirm_pass" id="confirm_pass-label">Confirm your password</label>
+
+            <button id="sign" type="submit" disabled>Sign Up</button>
+            <div id="message">Error message will appear here</div>
+            
+        <div id="login-link">
+            <p>Already have an account?</p>
+            <a href="./login.html">Sign In</a>
+        </div>
+    </form>
+<script src="../../utils/form.js"></script>
+</body>
+</html>
