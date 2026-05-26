@@ -13,5 +13,5 @@ setTimeout(() => {trail.remove();}, 200); // ele espera 800 milissegundos para p
 const btn = document.getElementById('ficha'); // aqui eu to pegando o botao de ficha e armazenando ele em uma variavel
 
 btn.addEventListener('click', () => { // aqui eu to dizendo que qnd o botao for clicado ele vai fazer a proxima linha
-    window.location.href = '../public/pages/inside/ficha.html'; // aqui eu to dizendo que qnd o botao for clicado ele vai redirecionar para a pagina de forms
+    window.location.href = '../tormenta 20/public/pages/inside/ficha.html'; // aqui eu to dizendo que qnd o botao for clicado ele vai redirecionar para a pagina de forms
 });
