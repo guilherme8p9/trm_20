@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TORMENTA 20</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/tormenta20-v1-666-1024x602.jpg">
+    <link rel="stylesheet" href="../../componentes/ui/page.css">
+</head>
+<body>
+<nav class="header" id="header">
+    <div class="logo_header">
+        <img src="../../assets/dado20.png" class="img_logo_header" alt="Logo T20" title="Logo T20">
+    </div>
+    
+    <div class="navigation_header">
+        <a href="../../index.html" class="spark">Home</a>
+        <a href="../../pages/inside/about.html"class="spark">About</a>
+        <a href="../../pages/account/forms.html"class="spark" id="select">Login</a>
+    </div>
+</nav>
+
+<section id="signup" hidden>
+    <form id="form" action="../../data/create_account.php" method="post">
+        <div id="content">
+            <h1>New account</h1>
+            <input type="text" id="name" name="name" required>
+            <label for="name" class="label" id="name-label">Name</label>
+            
+            <input type="email" id="email" name="email" required>
+            <label for="email" class="label" id="email-label">Email</label>
+            
+            <input type="password" id="password" name="password" required>
+            <label for="password" class="label" id="password-label" >Password</label>
+            
+            <input type="password" id="confirm_pass" name="confirm_pass" required>
+            <label for="confirm_pass" class="label" id="confirm_pass-label">Confirm your password</label>
+            
+            <button id="sign-up-btn" type="submit" disabled>Sign Up</button>
+            <p id="message-sign-up">Please fill in all fields.</p>
+            <div id="login-link">
+                <p>Already have an account?</p>
+                <a href="#" id="login_link">Sign In</a>
+        </div>
+    </form>
+</section>
+<section id="login">
+        <form id="form" action="../../data/create_account.php" method="post">
+        <div id="content">
+            <h1>Welcome back!</h1>
+            <input type="text" id="loginname" name="loginname" required>
+            <label for="loginname" class="label" id="name-login">Name</label>
+
+            <input type="email" id="loginemail" name="loginemail" required>
+            <label for="loginemail" class="label" id="email-login">Email</label>
+            
+            <input type="password" id="loginpassword" name="loginpassword" required>
+            <label for="loginpassword" class="label" id="password-login" >Password</label>
+            
+            <button id="login-btn" type="submit" disabled>Login</button>
+            <p id="message-login">Please fill in all fields.</p>
+            <div id="login-link">
+                <p>you dont have an account?</p>
+                <a href="#" id="signup_link">Sign Up</a>
+            </div>
+        </form>
+    </section>
+    <script src="../../utils/form.js"></script>
+</body>
+</html>

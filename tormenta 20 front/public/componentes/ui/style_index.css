@@ -57,7 +57,6 @@
     .img_logo_header:hover{
         width: 40px;
     }
-
     /* aqui eu alinho os elementos */
     .header, .navigation_header {
         display: flex;
@@ -72,11 +71,14 @@
         height: 60px;
         justify-content: space-between;
         padding: 0 5%;
+        position: sticky;
+        top: 0;
+        z-index: 100;
     }
 
     /* coloca o espaco entre os elemtnos na header */
     .navigation_header{
-    gap: 85px;
+    gap: 52px;
     }
 
     /* altera as cores e animacoes dos links*/

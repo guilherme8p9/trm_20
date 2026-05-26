@@ -1,0 +1,125 @@
+:root{
+    --color-main: #9c1b1f;
+    --color-submain: #a33139;
+    --color-darkmain: #5d0f14; /*green */
+    --color-totalwhite: #ffffff; /* green 2*/
+    --color-darkestmain: #34090c; /*green3*/
+    --color-white: #e5f2ee;  
+}
+
+@font-face {
+    font-family: readex pro;
+    src: url('../../assets/Lovelo\ Black.otf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.img_logo_header{
+    width: 45.5px;
+    transition: 0.5s ;
+}
+.img_logo_header:hover{
+    width: 40px;
+}
+/* aqui eu alinho os elementos */
+.header, .navigation_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* aqui eu altero o fundo da header */
+.header{
+    position: sticky;
+    background-color: var(--color-darkmain);
+    box-shadow: 1px 1px 4px var(--color-darkestmain);
+    height: 60px;
+    justify-content: space-between;
+    padding: 0 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* coloca o espaco entre os elemtnos na header */
+.navigation_header{
+    font-family: 'readex pro';
+    gap: 52px;
+}
+
+/* altera as cores e animacoes dos links*/
+.navigation_header a{
+    text-decoration: none;
+    color: var(--color-white);
+    transition: 1s;
+}
+/*ainda alterando as animacoes, aqui eh o brilho qnd passa o mouse*/
+.spark:hover{
+    text-shadow: 0 0 15px var(--color-totalwhite);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../../assets/34192.jpg');
+    background-size: cover;
+    line-height: 1.6;
+}
+
+#content{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 50px auto;
+    font-family: 'Arial', sans-serif;
+    color: var(--black);
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.header, .navigation_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#credits1{
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+#credits2{
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+#elements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+li{
+    list-style: none;
+    margin-bottom: 10px;
+}
